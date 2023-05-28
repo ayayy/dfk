@@ -1,5 +1,3 @@
---edited by ayd, made originally by rouxhaver
-
 --ToggleFreecam() <-- function
 
 local pi    = math.pi
@@ -158,7 +156,7 @@ local Input = {} do
 	local NAV_ADJ_SPEED      = 0.75
 	local NAV_SHIFT_MUL      = 0.25
 
-	local navSpeed = 2
+	local navSpeed = 1
 
 	function Input.Vel(dt)
 		navSpeed = clamp(navSpeed + dt*(keyboard.Up - keyboard.Down)*NAV_ADJ_SPEED, 0.01, 4)
